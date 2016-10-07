@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		9C62C1CC1DA5CA1000D3A181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C62C1CB1DA5CA1000D3A181 /* AppDelegate.swift */; };
-		9C62C1CE1DA5CA1000D3A181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C62C1CD1DA5CA1000D3A181 /* ViewController.swift */; };
+		9C62C1CE1DA5CA1000D3A181 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C62C1CD1DA5CA1000D3A181 /* SignInVC.swift */; };
 		9C62C1D11DA5CA1000D3A181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C62C1CF1DA5CA1000D3A181 /* Main.storyboard */; };
 		9C62C1D31DA5CA1000D3A181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C62C1D21DA5CA1000D3A181 /* Assets.xcassets */; };
 		9C62C1D61DA5CA1000D3A181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C62C1D41DA5CA1000D3A181 /* LaunchScreen.storyboard */; };
+		9C62C1DE1DA5CA7400D3A181 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C62C1DD1DA5CA7400D3A181 /* GoogleService-Info.plist */; };
+		A7F3920999535EC921F8D432 /* Pods_Argon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA976E3E34A5E45363A30FA2 /* Pods_Argon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C2499A6FFCD42FD338E314E /* Pods-Argon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Argon/Pods-Argon.release.xcconfig"; sourceTree = "<group>"; };
 		9C62C1C81DA5CA1000D3A181 /* Argon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Argon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C62C1CB1DA5CA1000D3A181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C62C1CD1DA5CA1000D3A181 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C62C1CD1DA5CA1000D3A181 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		9C62C1D01DA5CA1000D3A181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C62C1D21DA5CA1000D3A181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C62C1D51DA5CA1000D3A181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C62C1D71DA5CA1000D3A181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C62C1DD1DA5CA7400D3A181 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA976E3E34A5E45363A30FA2 /* Pods_Argon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Argon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8A632BD67E7A3943B385C20 /* Pods-Argon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Argon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Argon/Pods-Argon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7F3920999535EC921F8D432 /* Pods_Argon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80307EA82FDDF83B96FD5FAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8A632BD67E7A3943B385C20 /* Pods-Argon.debug.xcconfig */,
+				1C2499A6FFCD42FD338E314E /* Pods-Argon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9C62C1BF1DA5CA1000D3A181 = {
 			isa = PBXGroup;
 			children = (
 				9C62C1CA1DA5CA1000D3A181 /* Argon */,
 				9C62C1C91DA5CA1000D3A181 /* Products */,
+				80307EA82FDDF83B96FD5FAB /* Pods */,
+				F29BB2D09E24C9F8F322BAF3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +72,47 @@
 		9C62C1CA1DA5CA1000D3A181 /* Argon */ = {
 			isa = PBXGroup;
 			children = (
+				9C62C1E11DA8563C00D3A181 /* View */,
+				9C62C1E01DA8562F00D3A181 /* Controller */,
+				9C62C1DF1DA8562200D3A181 /* Model */,
 				9C62C1CB1DA5CA1000D3A181 /* AppDelegate.swift */,
-				9C62C1CD1DA5CA1000D3A181 /* ViewController.swift */,
 				9C62C1CF1DA5CA1000D3A181 /* Main.storyboard */,
 				9C62C1D21DA5CA1000D3A181 /* Assets.xcassets */,
 				9C62C1D41DA5CA1000D3A181 /* LaunchScreen.storyboard */,
 				9C62C1D71DA5CA1000D3A181 /* Info.plist */,
+				9C62C1DD1DA5CA7400D3A181 /* GoogleService-Info.plist */,
 			);
 			path = Argon;
+			sourceTree = "<group>";
+		};
+		9C62C1DF1DA8562200D3A181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9C62C1E01DA8562F00D3A181 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C62C1CD1DA5CA1000D3A181 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9C62C1E11DA8563C00D3A181 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F29BB2D09E24C9F8F322BAF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA976E3E34A5E45363A30FA2 /* Pods_Argon.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C62C1DA1DA5CA1000D3A181 /* Build configuration list for PBXNativeTarget "Argon" */;
 			buildPhases = (
+				8B02A977585EF4364DA283C2 /* [CP] Check Pods Manifest.lock */,
 				9C62C1C41DA5CA1000D3A181 /* Sources */,
 				9C62C1C51DA5CA1000D3A181 /* Frameworks */,
 				9C62C1C61DA5CA1000D3A181 /* Resources */,
+				348A364B255EC9D2009D36E5 /* [CP] Embed Pods Frameworks */,
+				3D9A09CB70C7BDA7A552CEB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C62C1D61DA5CA1000D3A181 /* LaunchScreen.storyboard in Resources */,
+				9C62C1DE1DA5CA7400D3A181 /* GoogleService-Info.plist in Resources */,
 				9C62C1D31DA5CA1000D3A181 /* Assets.xcassets in Resources */,
 				9C62C1D11DA5CA1000D3A181 /* Main.storyboard in Resources */,
 			);
@@ -132,12 +187,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		348A364B255EC9D2009D36E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Argon/Pods-Argon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D9A09CB70C7BDA7A552CEB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Argon/Pods-Argon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B02A977585EF4364DA283C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9C62C1C41DA5CA1000D3A181 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C62C1CE1DA5CA1000D3A181 /* ViewController.swift in Sources */,
+				9C62C1CE1DA5CA1000D3A181 /* SignInVC.swift in Sources */,
 				9C62C1CC1DA5CA1000D3A181 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +362,7 @@
 		};
 		9C62C1DB1DA5CA1000D3A181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A632BD67E7A3943B385C20 /* Pods-Argon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43WUZZ63R8;
@@ -272,6 +376,7 @@
 		};
 		9C62C1DC1DA5CA1000D3A181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C2499A6FFCD42FD338E314E /* Pods-Argon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 43WUZZ63R8;
@@ -302,6 +407,7 @@
 				9C62C1DC1DA5CA1000D3A181 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
